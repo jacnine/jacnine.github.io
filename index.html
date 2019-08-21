@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script type="text/javascript" src="jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css"/>
+  <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css"/>
+  <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Actividad Evaluable UF1306-2 </title>
+
+</head>
+
+<body>
+<script>
+
+// menú
+$( function() {
+    $( "#menu" ).menu();
+  } );
+
+//Función acordión
+
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  
+  //Función Tabs
+
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+
+
+// Button
+
+$(".boton").button();
+
+// Selección de menú....Reservación
+
+    $( function() {
+      $( "#speed" ).selectmenu();
+   
+      $( "#files" ).selectmenu();
+   
+      $( "#number" )
+        .selectmenu()
+        .selectmenu( "menuWidget" )
+          .addClass( "overflow" );
+   
+      $( "#salutation" ).selectmenu();
+    } );
+    
+</script>
+
+<!--Cabecera con menú-->
+<div id="cabecera">
+  <img src="https://www.growproexperience.com/wp-content/uploads/2017/12/growpro-logotipo-small-1.png"/>
+  <ul id="lista-menu">
+     <li><a href="https://www.growproexperience.com/australia">AUSTRALIA</a></li>
+      <li><a href="https://www.growproexperience.com/nueva-zelanda">NUEVA ZELANDA</a></li>
+      <li><a href="https://www.growproexperience.com/canada">CANADÁ</a></li>
+      <li><a href="https://www.growproexperience.com/blog">BLOG</a></li>
+      <li><a href="https://www.growproexperience.com/area-grower">AREA GROWER</a></li>
+      <li><a href="https://www.growproexperience.com/guias-gratuitas">GUÍAS GRATUITAS</a></li>
+      
+  </ul>
+</div>
+
+<!-- Slider con Boton en las Imagenes-->
+
+<script src="https:fotorama//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+<div class="contenedor">
+  <div class="fotorama"
+  data-width="1100"
+  data-height="700"
+  data-navposition="top"
+  data-allowfullscreen="native"
+  data-fit="cover">
+    
+    <div>
+      <a class="ui-button ui-widget ui-corner-all" href="https://www.growproexperience.com/australia">Leer más...</a>
+      <img src="img/canguro.jpg" data-fit="contain" data-full="1_full.jpg">
+    </div>
+    <div>
+        <a class="ui-button ui-widget ui-corner-all" href="https://www.growproexperience.com/nueva-zelanda">Leer más...</a>
+        <img src="img/agua.jpg" data-full="2_full.jpg">
+    </div>
+    <div>
+        <a class="ui-button ui-widget ui-corner-all" href="https://www.growproexperience.com/canada">Leer más...</a>
+        <img src="img/mar.jpg" data-full="3_full.jpg"></div>
+  </div> 
+</div>  	
+
+<!-- Arcordion con tres etiquetas-->
+
+  <div id="accordion">
+  <h2>AUSTRALIA</h2>
+  <div>
+    <p>Australia. El paraíso en la tierra. En cuanto aterrices escucharás un “no worries mate” tan característico de los locales. En esta frase se resume un estilo de vida donde lo importante es saber disfrutar de cada momento. Playas paradisíacas y mucho surf te esperan en este rincón del mundo.<br><br>
+    <p>En GrowPro Experience creemos que una estancia en el extranjero debería ser una asignatura obligatoria en la vida. ¿Tu también lo crees?</p>
+    
+  </div>
+  <h2>NUEVA ZELANDA</h2>
+  <div>
+    <p>
+    Naturaleza en estado puro. Si buscas un estilo de vida relajado Nueva Zelanda es tu destino. Recorriendo este increíble país te darás cuenta de que nunca habías visto nada igual. Paisajes de película, deportes extremos y gente amable será lo que te enamorará de este lugar.<br><br>
+
+	En GrowPro Experience creemos que una estancia en el extranjero debería ser una asignatura obligatoria en la vida. ¿Tu también lo crees?
+    </p>
+  </div>
+  <h2>CANADÁ</h2>
+  <div>
+    <p>Todo el mundo se enamora. Considerado uno de los países con mayor calidad de vida del mundo. Conocerás gente de todos los rincones del mundo que harán tu estancia inolvidable. Si eres un amante de la montaña y el esquí no podrías haber elegido mejor destino.<br><br>
+        En GrowPro Experience creemos que una estancia en el extranjero debería ser una asignatura obligatoria en la vida. ¿Tu también lo crees?</p>
+        <ul>
+            <li>Consigue un título oficial de inglés en Toronto</li>
+            <li>Estudia negocios en Toronto</li>
+            <li>Intensivo de inglés en Toronto</li>
+        </ul>
+  </div>
+</div>
+
+<hr><br>
+
+<!--Función Tabs-->
+
+  <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Montañas Rocosas canadienses</a></li>
+    <li><a href="#tabs-2">Vive la experiencia de tu vida</a></li>
+    <li><a href="#tabs-3">Guías Gratuitas</a></li>
+  </ul>
+  <div id="tabs-1">
+  	<img src="img/montanas.jpg">
+    <p>A las montañas rocosas se las considera la gran columna vertebral de América del Norte, y es casi literal. Forman una gigantesca barrera azul, gris, negra y blanca, llena de picos que se elevan a unos 2.500 metros por encima de las verdes praderas. Este conjunto de montañas fue declarado Patrimonio de la Humanidad en el año 1984 y forma parte de los 20 parques nacionales de Canadá que deberías visitar.</p>
+  </div>
+  <div id="tabs-2">
+  	<img src="img/vive.jpg">
+    <p>Estudiar inglés es una decisión que algunos toman por placer; otros lo hacen para abrirse paso en el mundo laboral o tener mejores oportunidades profesionales. Por eso, países como Canadá, Australia, Reino Unido y Estados Unidos ofrecen posibilidades de estudio para extranjeros que buscan perfeccionar sus habilidades en la lengua inglesa. Sin embargo, para muchos, estudiar […]</p>
+  </div>
+  <div id="tabs-3">
+  	<img src="img/guia.jpg" >
+    <p>¿Qué descubrirás en esta guía?
+	    Razones para elegir Australia como tu nuevo país
+	    Tipos de cursos : Cursos de inglés ELICOS, los Cursos vocacionales VET y TAFE y los Master y Higher Education
+    	Tipos de visados que te permiten trabajar
+	    Averiguar qué puestos de trabajo más demandados
+	    Cómo son los australianos; sus costumbres, su carácter, sus aficiones y hasta su gastronomía</p>
+  </div>
+</div>
+<hr>
+
+
+<!-- Reservacion-->
+
+<div class="vive">
+<h2>RESERVACIÓN</h2>
+
+<div class="demo">
+ 
+    <form action="#">
+     
+      <fieldset>
+        <label for="speed">Seleccione una Ciudad:</label>
+        <select name="speed" id="speed">
+          <option>Australia</option>
+          <option>Nueva Zelanda</option>
+          <option>Canada</option>
+        </select>
+     
+        <label for="files">Motivo de viaje:</label>
+        <select name="files" id="files">
+            <option value="jquery">Trabajo</option>
+            <option value="jqueryui">Estudios</option>
+            <option value="jqueryui">Vacaciones</option>
+            <option value="jqueryui">Otros</option>
+        </select><br>
+     
+        <label for="number">Personas a reservar:</label>
+        <select name="number" id="number">
+          <option>1</option>
+          <option selected="selected">2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+        </select>
+     
+        <label for="salutation">Seleccione el título</label>
+        <select name="salutation" id="salutation">
+          <option disabled selected>Por favor seleccione uno</option>
+          <option>Sr.</option>
+          <option>Sra.</option>
+          <option>Dr.</option>
+          <option>Prof.</option>
+          <option>Otro</option>
+        </select>
+      </fieldset>
+     
+    </form>
+     
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Footer-->
+<div class="footer">
+  <h5>Copyright Jacnine Vielma 2019 Todos los derechos reservados •  
+      Política de privacidad y aviso Legal </h5>
+</footer>
+</body>
+</html>	
